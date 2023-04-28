@@ -1,0 +1,111 @@
+"Start Symbol" = <programe>
+               
+!-----Terminals-----
+ident = [~] | {letter}{Alphanumeric}*
+number = ('+'|'-')?{digit}+ ('.'{digit}+)? (('e'|('+'|'-')?{digit}+)'^'('+'|'-'){digit}+('.'{digit}+)?)?
+!-----Rules-----
+<programe> ::= build <stmt_list> finish
+            
+<stmt_list> ::= <stmt>
+             |<stmt><stmt_list>
+             
+<stmt> ::= <assign>
+           |<as long as_stmt>
+           |<match_stmt>
+           |<loop_stmt>
+           |<perform untill_stmt>
+           |<method_def>
+           |<method_call>
+           |<class_def>
+           |<obj_creation>
+
+!-------assign--------           
+<assign> ::= <var>'='<expr> ';'
+          
+<var> ::= ident
+       
+<constant> ::= const <var>
+      
+<expr> ::= <expr>'+'<term>
+        |<expr>'-'<term>
+        |<term>
+        
+<term> ::= <term>'*'<factor>
+        |<term>'/'<factor>
+        |<term>'%'<factor>
+        |<factor>
+        
+<factor> ::= <factor>pw<exponen>
+          |<exponen>
+          
+<exponen> ::= '('<expr>')'
+       |<var>
+       |<num>
+       
+<num> ::= number
+         
+!-------if_stmt--------
+<as long as_stmt> ::= as long as <cond> perform ':' <stmt_list>
+           |as long as <cond> perform ':' <stmt_list> otherwise <stmt_list>
+           
+<cond> ::= <expr><op><expr>
+        
+<op> ::= '<' | '<=' | '>' | '>=' | '==' | '!='
+      
+!-------swich--------
+<match_stmt> ::= match <expr> '{' <cases_list> '}'          !match = switch   opps = defult   break = stop
+               |match <expr> '{' <cases_list> '}' opps '!' <stmt_list>
+              
+<cases_list> ::= <case>
+         |<case><cases_list>
+         
+<case> ::= case <expr> ':' <stmt_list> stop ':' <stmt_list>
+      
+!-------for_stmt--------
+<loop_stmt> ::= loop from <data_type><assign> to <cond> stepping <step> perfom ':' <stmt_list>
+            
+            
+<data_type> ::= int | float | double | string | bool
+        
+<step> ::= '--'<var>
+        |<var>'--'
+        |'++'<var>
+        |<var>'++'
+        |<assign>
+        
+!-------do while_stmt------
+<perform untill_stmt> ::= perform ':' <stmt_list> untill <cond>
+        
+!-------method_definition-------
+<method_def> ::= func <access_level> <return_type> <method_name> '(' ')' ':' <stmt_list>
+              | func <access_level> <return_type> <method_name> '(' <params_list> ')' ':' <stmt_list>
+              
+<access_level> ::= public | protected | private
+                
+<return_type> ::= void | <data_type>
+               
+<method_name> ::= ident
+               
+<params_list> ::= <para> | <para> ',' <params_list>
+          
+<para> ::= <data_type><var>
+        
+!-------method_call-------
+<method_call> ::= <method_name> '(' ')'
+               | <method_name> '(' <params_list> ')'
+               
+!-------class_definition---------
+<class_def> ::= <access_level> class <class_name> '{' <stmt_list> '}'
+             | <access_level> class <class_name> <inher> '{' <stmt_list> '}'
+             
+             
+<class_name> ::= ident
+              
+<inher> ::= inherit<class_name>
+         
+!--------object_creation-------
+<obj_creation> ::= <class_name> <obj_name> '=' new <class_name> '(' ')'
+                | <class_name> <obj_name> '=' new <class_name> '(' <params_list> ')'
+                   
+<obj_name> ::= ident
+           

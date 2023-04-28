@@ -1,0 +1,26 @@
+C:\Users\HP\Desktop\New folder\plc-project\bin\Debug\plc-project.exe.config
+C:\Users\HP\Desktop\New folder\plc-project\bin\Debug\plc-project.exe
+C:\Users\HP\Desktop\New folder\plc-project\bin\Debug\plc-project.pdb
+C:\Users\HP\Desktop\New folder\plc-project\bin\Debug\CalithaLib.dll
+C:\Users\HP\Desktop\New folder\plc-project\bin\Debug\GoldParserEngine.dll
+C:\Users\HP\Desktop\New folder\plc-project\obj\Debug\plc-project.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\New folder\plc-project\obj\Debug\plc-project.csproj.SuggestedBindingRedirects.cache
+C:\Users\HP\Desktop\New folder\plc-project\obj\Debug\plc_project.Form1.resources
+C:\Users\HP\Desktop\New folder\plc-project\obj\Debug\plc_project.Properties.Resources.resources
+C:\Users\HP\Desktop\New folder\plc-project\obj\Debug\plc-project.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\New folder\plc-project\obj\Debug\plc-project.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\New folder\plc-project\obj\Debug\plc-project.csproj.CopyComplete
+C:\Users\HP\Desktop\New folder\plc-project\obj\Debug\plc-project.exe
+C:\Users\HP\Desktop\New folder\plc-project\obj\Debug\plc-project.pdb
+C:\Users\HP\Desktop\plc_proj(Grammer+vs_program)\VS_project\plc-project\bin\Debug\plc-project.exe.config
+C:\Users\HP\Desktop\plc_proj(Grammer+vs_program)\VS_project\plc-project\bin\Debug\plc-project.exe
+C:\Users\HP\Desktop\plc_proj(Grammer+vs_program)\VS_project\plc-project\bin\Debug\plc-project.pdb
+C:\Users\HP\Desktop\plc_proj(Grammer+vs_program)\VS_project\plc-project\obj\Debug\plc-project.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\plc_proj(Grammer+vs_program)\VS_project\plc-project\obj\Debug\plc-project.csproj.SuggestedBindingRedirects.cache
+C:\Users\HP\Desktop\plc_proj(Grammer+vs_program)\VS_project\plc-project\obj\Debug\plc_project.Form1.resources
+C:\Users\HP\Desktop\plc_proj(Grammer+vs_program)\VS_project\plc-project\obj\Debug\plc_project.Properties.Resources.resources
+C:\Users\HP\Desktop\plc_proj(Grammer+vs_program)\VS_project\plc-project\obj\Debug\plc-project.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\plc_proj(Grammer+vs_program)\VS_project\plc-project\obj\Debug\plc-project.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\plc_proj(Grammer+vs_program)\VS_project\plc-project\obj\Debug\plc-project.csproj.CopyComplete
+C:\Users\HP\Desktop\plc_proj(Grammer+vs_program)\VS_project\plc-project\obj\Debug\plc-project.exe
+C:\Users\HP\Desktop\plc_proj(Grammer+vs_program)\VS_project\plc-project\obj\Debug\plc-project.pdb
